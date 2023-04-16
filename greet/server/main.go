@@ -18,7 +18,7 @@ func main() {
 	list, err := net.Listen("tcp", addr)
 
 	if err != nil {
-		log.Fatal("failed to listen on: %v\n", err)
+		log.Fatalf("failed to listen on: %v\n", err)
 	}
 	log.Printf("listening on %s\n", addr)
 
